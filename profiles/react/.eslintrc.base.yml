@@ -10,6 +10,7 @@ parserOptions:
 env:
   es6: true
   node: false
+  browser: true
 plugins:
   - "@typescript-eslint"
 extends:
@@ -20,6 +21,10 @@ extends:
   - plugin:react-hooks/recommended
   - standard
 rules:
+  "@typescript-eslint/no-use-before-define":
+    - error
+  no-use-before-define:
+    - off
   node/no-unsupported-features/es-syntax:
     - error
     - ignores:
