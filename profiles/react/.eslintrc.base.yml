@@ -21,6 +21,8 @@ extends:
   - plugin:react-hooks/recommended
   - standard
 rules:
+  node/no-unsupported-features/es-syntax:
+    - off
   react/prop-types:
     - off
   "@typescript-eslint/no-use-before-define":
