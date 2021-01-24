@@ -12,10 +12,6 @@ echo "${MERGED_IGNORE}" > .eslintignore
 
 cp -n "${SCRIPT_DIR}/tsconfig.json" .
 cp "${SCRIPT_DIR}/tsconfig.base.json" .
-
-mkdir -p .vscode
-cp -n "${SCRIPT_DIR}/.vscode/launch.json" .vscode/launch.json
-
 cp -n "${SCRIPT_DIR}/.editorconfig" .
 
 if [ -e ./package-lock.json ]; then
