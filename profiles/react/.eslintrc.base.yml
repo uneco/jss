@@ -21,6 +21,15 @@ extends:
   - plugin:react-hooks/recommended
   - standard
 rules:
+  semi:
+    - off
+  "@typescript-eslint/semi":
+    - error
+    - never
+  "@typescript-eslint/member-delimiter-style":
+    - error
+  "@typescript-eslint/no-use-before-define":
+    - off
   node/no-unsupported-features/es-syntax:
     - off
   react/prop-types:
@@ -29,10 +38,6 @@ rules:
     - error
   no-use-before-define:
     - off
-  node/no-unsupported-features/es-syntax:
-    - error
-    - ignores:
-        - modules
   node/no-missing-import:
     - off
   comma-dangle:
