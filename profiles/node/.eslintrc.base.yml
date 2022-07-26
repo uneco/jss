@@ -16,14 +16,16 @@ extends:
   - eslint:recommended
   - plugin:@typescript-eslint/eslint-recommended
   - plugin:@typescript-eslint/recommended
-  - plugin:node/recommended
+  - plugin:n/recommended
   - standard
 rules:
-  node/no-unsupported-features/es-syntax:
+  n/no-unsupported-features/es-syntax:
     - error
     - ignores:
         - modules
-  node/no-missing-import:
+  n/no-missing-import:
+    - off
+  no-unused-vars:
     - off
   comma-dangle:
     - error
